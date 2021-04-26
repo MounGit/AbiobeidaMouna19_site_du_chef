@@ -1,5 +1,44 @@
-section
+section:first-of-type
     position: relative
+    div
+        div
+            div
+                div
+                    div:first-of-type
+                        font-family: 'Courgette', cursive
+                        line-height: 1
+                        margin-bottom: 40px
+                        p:first-of-type
+                            font-size: 40px
+                            span
+                                font-size: 65px
+                        p:nth-of-type(2)
+                            font-size: 40px
+                            span:first-of-type
+                                font-size: 65px
+                                color: $danger
+                                text-transform: uppercase
+                            span:last-of-type
+                                font-size: 55px
+                        p:last-of-type
+                            font-size: 40px
+                    div:last-of-type
+                        a:first-of-type
+                            margin-right: 10px
+                            button
+                                border: none
+                                border-radius: 35px
+                                padding: 10px
+                        a:last-of-type
+                            margin-left: 10px
+                            button
+                                border: none
+                                border-radius: 35px
+                                padding: 10px
+                                background-color: $danger
+                                color: $light 
+
+                                    
     #filtre
         position: absolute
         top: 0
@@ -7,3 +46,6 @@ section
         height: 100%
         background-color:  rgba(52,58,64,0.8)
 
+section:nth-of-type(2)
+    background-size: cover
+    height: 15px
