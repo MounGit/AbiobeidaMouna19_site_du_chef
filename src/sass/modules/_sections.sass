@@ -29,14 +29,18 @@ section:first-of-type
                                 border: none
                                 border-radius: 35px
                                 padding: 10px
+                                &:hover
+                                    background-color: $danger
+                                    color: $light 
                         a:last-of-type
                             margin-left: 10px
                             button
                                 border: none
                                 border-radius: 35px
                                 padding: 10px
-                                background-color: $danger
-                                color: $light 
+                                &:hover
+                                    background-color: $danger
+                                    color: $light 
 
                                     
     #filtre
@@ -51,6 +55,9 @@ section:first-of-type
     height: 20px
     background-size: contain
     background-color:  rgba(52,58,64,0.8)
+
+
+
 section:nth-of-type(3)
     padding-top: 40px
     padding-bottom: 40px
@@ -86,3 +93,29 @@ section:nth-of-type(3)
                     font-size: 50px
 
 
+section:nth-of-type(4)
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    text-align: center
+    div
+        padding: 35px
+        h2
+            font-size: 35px
+            font-family:  'Courgette', cursive
+            color: $light
+            span
+                color: $danger
+                font-size: 50px
+    div
+        display: flex
+        align-items: center
+        justify-content: space-around
+        div
+            display: flex
+            flex-direction: column
+            div
+                display: none
+                // &:hover
+                // display: contents
