@@ -16553,9 +16553,54 @@ section:first-of-type #filtre {
   background-color: rgba(52, 58, 64, 0.8);
 }
 
-section:nth-of-type(2) {
-  background-size: cover;
-  height: 15px;
+#test {
+  background-image: url("./public/images/bottom_decoration_img.png");
+  height: 20px;
+  background-size: contain;
+  background-color: rgba(52, 58, 64, 0.8);
+}
+
+section:nth-of-type(3) {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+section:nth-of-type(3) div {
+  position: relative;
+}
+section:nth-of-type(3) div img:first-of-type {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+section:nth-of-type(3) div img:nth-of-type(2) {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+section:nth-of-type(3) div img:nth-of-type(3) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+section:nth-of-type(3) div img:nth-of-type(4) {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+section:nth-of-type(3) div div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+section:nth-of-type(3) div div h2 {
+  font-size: 35px;
+  font-family: "Courgette", cursive;
+}
+section:nth-of-type(3) div div h2 span {
+  color: #d54136;
+  font-size: 50px;
 }
 
 /*# sourceMappingURL=app.css.map */
