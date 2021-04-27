@@ -16641,4 +16641,96 @@ section:nth-of-type(4) div div div {
   display: none;
 }
 
+section:nth-of-type(5) {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+section:nth-of-type(5) div {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+}
+section:nth-of-type(5) div div {
+  padding: 35px;
+  border-radius: 10px;
+}
+section:nth-of-type(5) div div h2 {
+  font-size: 35px;
+  font-family: "Courgette", cursive;
+}
+section:nth-of-type(5) div div h2 span {
+  color: #c7392f;
+  font-size: 50px;
+}
+section:nth-of-type(5) div #img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+section:nth-of-type(5) div img:nth-of-type(2) {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+section:nth-of-type(5) div img:nth-of-type(3) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+section:nth-of-type(5) div img:last-of-type {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+section:nth-of-type(5) div div p span {
+  font-size: 20px;
+}
+section:nth-of-type(5) div div div div {
+  height: 230px;
+}
+section:nth-of-type(5) div div div div input {
+  width: 100%;
+  border: none;
+  height: 30px;
+  border-radius: 5px;
+  color: #909092;
+  background-color: #dadbf2;
+  padding-left: 4px;
+  font-size: smaller;
+}
+section:nth-of-type(5) div div div div select {
+  width: 100%;
+  border: none;
+  height: 30px;
+  border-radius: 5px;
+  color: #848485;
+  background-color: #eaebf8;
+  font-size: smaller;
+}
+section:nth-of-type(5) div div button {
+  border: none;
+  border-radius: 35px;
+  padding: 10px;
+  background-color: #c7392f;
+  color: #f8f9fa;
+}
+#blog div div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#blog div div div img {
+  border: #e6e7f3 4px solid;
+  border-radius: 10px;
+  width: 350px;
+}
+#blog div div div p {
+  background-color: #c7392f;
+  border-radius: 10px;
+  color: #f8f9fa;
+}
+
 /*# sourceMappingURL=app.css.map */
