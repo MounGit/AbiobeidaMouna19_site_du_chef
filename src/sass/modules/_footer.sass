@@ -4,7 +4,7 @@ footer
         div
             div:first-of-type
                 color: $light
-                width: 32%
+                // width: 32%
                 h4
                     margin-bottom: 15px
                 p   
@@ -17,7 +17,7 @@ footer
                         font-size: 30px
             div:nth-of-type(2)
                 color: $light
-                width: 32%
+                // width: 32%
                 h4
                     margin-bottom: 15px
                 div
@@ -28,7 +28,7 @@ footer
                         margin-bottom: 10px
             div:last-of-type
                 color: $light
-                width: 32%
+                // width: 32%
                 h4
                     margin-bottom: 15px
                 div 
@@ -46,3 +46,25 @@ footer
                         &:hover
                             background-color: $light
                             color: black
+
+
+@media ( min-width: 1008px)
+    footer
+        div
+            justify-content-between
+            div
+                div:first-of-type, div:nth-of-type(2), div:nth-of-type(3)
+                    width: 32%
+            
+
+
+
+@media ( min-width: 320px) and ( max-width: 1007px )
+    footer
+        div
+            flex-direction: column
+            align-items: center
+            div
+                div:first-of-type, div:nth-of-type(2), div:nth-of-type(3)
+                    width: 75%
+                

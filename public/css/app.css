@@ -16515,6 +16515,11 @@ nav div ul i {
   font-size: 35px;
 }
 
+@media (min-width: 1008px) {
+  nav {
+    width: 100%;
+  }
+}
 section:first-of-type {
   position: relative;
 }
@@ -16623,6 +16628,84 @@ section:nth-of-type(3) div div h2 {
 section:nth-of-type(3) div div h2 span {
   color: #c03654;
   font-size: 50px;
+}
+section:nth-of-type(3) div div:nth-of-type(2) {
+  border: 3px solid green;
+}
+section:nth-of-type(3) div div:nth-of-type(2) h2 {
+  font-size: 35px;
+  font-family: "Courgette", cursive;
+  color: black;
+  border: 3px solid red;
+}
+section:nth-of-type(3) div div:nth-of-type(2) h2 span {
+  color: #c03654;
+  font-size: 50px;
+  border: 3px solid yellow;
+}
+section:nth-of-type(3) div div:nth-of-type #home, section:nth-of-type(3) div div:nth-of-type #lunch, section:nth-of-type(3) div div:nth-of-type #snacks, section:nth-of-type(3) div div:nth-of-type #dinner {
+  border: yellow 6px solid;
+}
+section:nth-of-type(3) div div:nth-of-type #home div, section:nth-of-type(3) div div:nth-of-type #lunch div, section:nth-of-type(3) div div:nth-of-type #snacks div, section:nth-of-type(3) div div:nth-of-type #dinner div {
+  border: green 6px solid;
+}
+section:nth-of-type(3) div div:nth-of-type #home div div, section:nth-of-type(3) div div:nth-of-type #lunch div div, section:nth-of-type(3) div div:nth-of-type #snacks div div, section:nth-of-type(3) div div:nth-of-type #dinner div div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+section:nth-of-type(3) div div:nth-of-type #home div div img, section:nth-of-type(3) div div:nth-of-type #lunch div div img, section:nth-of-type(3) div div:nth-of-type #snacks div div img, section:nth-of-type(3) div div:nth-of-type #dinner div div img {
+  width: 17%;
+  border-radius: 50%;
+  border: 3px #e6e7f3 solid;
+}
+section:nth-of-type(3) div div:nth-of-type #home div div div, section:nth-of-type(3) div div:nth-of-type #lunch div div div, section:nth-of-type(3) div div:nth-of-type #snacks div div div, section:nth-of-type(3) div div:nth-of-type #dinner div div div {
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+  text-align: left;
+  border: 3px red solid;
+}
+section:nth-of-type(3) div div:nth-of-type #home div div div p, section:nth-of-type(3) div div:nth-of-type #lunch div div div p, section:nth-of-type(3) div div:nth-of-type #snacks div div div p, section:nth-of-type(3) div div:nth-of-type #dinner div div div p {
+  margin: 0;
+  font-weight: bold;
+  text-align: left;
+}
+section:nth-of-type(3) div div:nth-of-type #home div div div span, section:nth-of-type(3) div div:nth-of-type #lunch div div div span, section:nth-of-type(3) div div:nth-of-type #snacks div div div span, section:nth-of-type(3) div div:nth-of-type #dinner div div div span {
+  font-size: small;
+}
+section:nth-of-type(3) div div:nth-of-type #home div div p, section:nth-of-type(3) div div:nth-of-type #lunch div div p, section:nth-of-type(3) div div:nth-of-type #snacks div div p, section:nth-of-type(3) div div:nth-of-type #dinner div div p {
+  display: inline;
+  height: 23px;
+}
+
+#home div div, #lunch div div, #snacks div div, #dinner div div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#home div div img, #lunch div div img, #snacks div div img, #dinner div div img {
+  width: 17%;
+  border-radius: 50%;
+  border: 3px #e6e7f3 solid;
+}
+#home div div div, #lunch div div div, #snacks div div div, #dinner div div div {
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+  text-align: left;
+}
+#home div div div p, #lunch div div div p, #snacks div div div p, #dinner div div div p {
+  margin: 0;
+  font-weight: bold;
+  text-align: left;
+}
+#home div div div span, #lunch div div div span, #snacks div div div span, #dinner div div div span {
+  font-size: small;
+}
+#home div div p, #lunch div div p, #snacks div div p, #dinner div div p {
+  display: inline;
+  height: 23px;
 }
 
 section:nth-of-type(4) {
@@ -16835,7 +16918,6 @@ section:nth-of-type(8) {
   font-size: 50px;
 }
 #blog #flex {
-  border: red 3px solid;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -16843,7 +16925,6 @@ section:nth-of-type(8) {
   padding: 40px;
 }
 #blog #flex #card, #blog #flex #card2 {
-  border: yellow 3px solid;
   width: 40%;
   height: 350px;
 }
@@ -16851,7 +16932,6 @@ section:nth-of-type(8) {
   position: relative;
   height: 75%;
   width: 100%;
-  border: green 3px solid;
 }
 #blog #flex #card div img, #blog #flex #card2 div img {
   width: 100% !important;
@@ -16898,47 +16978,11 @@ section:nth-of-type(8) {
   color: black;
 }
 
-#menuOnglet div:nth-of-type(2) #home, #menuOnglet div:nth-of-type(2) #about, #menuOnglet div:nth-of-type(2) #services, #menuOnglet div:nth-of-type(2) #contact {
-  border: yellow 6px solid;
-}
-#menuOnglet div:nth-of-type(2) #home div, #menuOnglet div:nth-of-type(2) #about div, #menuOnglet div:nth-of-type(2) #services div, #menuOnglet div:nth-of-type(2) #contact div {
-  border: green 6px solid;
-}
-#menuOnglet div:nth-of-type(2) #home div div, #menuOnglet div:nth-of-type(2) #about div div, #menuOnglet div:nth-of-type(2) #services div div, #menuOnglet div:nth-of-type(2) #contact div div {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-#menuOnglet div:nth-of-type(2) #home div div img, #menuOnglet div:nth-of-type(2) #about div div img, #menuOnglet div:nth-of-type(2) #services div div img, #menuOnglet div:nth-of-type(2) #contact div div img {
-  width: 17%;
-  border-radius: 50%;
-  border: 3px #e6e7f3 solid;
-}
-#menuOnglet div:nth-of-type(2) #home div div div, #menuOnglet div:nth-of-type(2) #about div div div, #menuOnglet div:nth-of-type(2) #services div div div, #menuOnglet div:nth-of-type(2) #contact div div div {
-  display: flex;
-  flex-direction: column;
-  width: 55%;
-  text-align: left;
-}
-#menuOnglet div:nth-of-type(2) #home div div div p, #menuOnglet div:nth-of-type(2) #about div div div p, #menuOnglet div:nth-of-type(2) #services div div div p, #menuOnglet div:nth-of-type(2) #contact div div div p {
-  margin: 0;
-  font-weight: bold;
-  text-align: left;
-}
-#menuOnglet div:nth-of-type(2) #home div div div span, #menuOnglet div:nth-of-type(2) #about div div div span, #menuOnglet div:nth-of-type(2) #services div div div span, #menuOnglet div:nth-of-type(2) #contact div div div span {
-  font-size: small;
-}
-#menuOnglet div:nth-of-type(2) #home div div p, #menuOnglet div:nth-of-type(2) #about div div p, #menuOnglet div:nth-of-type(2) #services div div p, #menuOnglet div:nth-of-type(2) #contact div div p {
-  display: inline;
-  height: 23px;
-}
-
 footer div {
   padding: 10px;
 }
 footer div div div:first-of-type {
   color: #f8f9fa;
-  width: 32%;
 }
 footer div div div:first-of-type h4 {
   margin-bottom: 15px;
@@ -16954,7 +16998,6 @@ footer div div div:first-of-type div i {
 }
 footer div div div:nth-of-type(2) {
   color: #f8f9fa;
-  width: 32%;
 }
 footer div div div:nth-of-type(2) h4 {
   margin-bottom: 15px;
@@ -16969,7 +17012,6 @@ footer div div div:nth-of-type(2) div img {
 }
 footer div div div:last-of-type {
   color: #f8f9fa;
-  width: 32%;
 }
 footer div div div:last-of-type h4 {
   margin-bottom: 15px;
@@ -16991,6 +17033,21 @@ footer div div div:last-of-type div button {
 footer div div div:last-of-type div button:hover {
   background-color: #f8f9fa;
   color: black;
+}
+
+@media (min-width: 1008px) {
+  footer div div div:first-of-type, footer div div div:nth-of-type(2), footer div div div:nth-of-type(3) {
+    width: 32%;
+  }
+}
+@media (min-width: 320px) and (max-width: 1007px) {
+  footer div {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer div div div:first-of-type, footer div div div:nth-of-type(2), footer div div div:nth-of-type(3) {
+    width: 75%;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */
