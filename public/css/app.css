@@ -13832,6 +13832,10 @@ button.bg-bluelight:focus {
   width: 80% !important;
 }
 
+.w-45 {
+  width: 45% !important;
+}
+
 .w-40 {
   width: 40% !important;
 }
@@ -13934,6 +13938,10 @@ button.bg-bluelight:focus {
 
 .h-80 {
   height: 80% !important;
+}
+
+.h-45 {
+  height: 45% !important;
 }
 
 .h-40 {
@@ -16515,6 +16523,12 @@ nav div ul i {
   font-size: 35px;
 }
 
+.testbouton {
+  width: 14px !important;
+  height: 14px !important;
+  border-radius: 50%;
+}
+
 @media (min-width: 1008px) {
   nav {
     width: 100%;
@@ -16643,67 +16657,31 @@ section:nth-of-type(3) div div:nth-of-type(2) h2 span {
   font-size: 50px;
   border: 3px solid yellow;
 }
-section:nth-of-type(3) div div:nth-of-type #home, section:nth-of-type(3) div div:nth-of-type #lunch, section:nth-of-type(3) div div:nth-of-type #snacks, section:nth-of-type(3) div div:nth-of-type #dinner {
-  border: yellow 6px solid;
-}
-section:nth-of-type(3) div div:nth-of-type #home div, section:nth-of-type(3) div div:nth-of-type #lunch div, section:nth-of-type(3) div div:nth-of-type #snacks div, section:nth-of-type(3) div div:nth-of-type #dinner div {
-  border: green 6px solid;
-}
-section:nth-of-type(3) div div:nth-of-type #home div div, section:nth-of-type(3) div div:nth-of-type #lunch div div, section:nth-of-type(3) div div:nth-of-type #snacks div div, section:nth-of-type(3) div div:nth-of-type #dinner div div {
+#v-pills-home div div, #v-pills-profile div div, #v-pills-messages div div, #v-pills-settings div div {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
-section:nth-of-type(3) div div:nth-of-type #home div div img, section:nth-of-type(3) div div:nth-of-type #lunch div div img, section:nth-of-type(3) div div:nth-of-type #snacks div div img, section:nth-of-type(3) div div:nth-of-type #dinner div div img {
+#v-pills-home div div img, #v-pills-profile div div img, #v-pills-messages div div img, #v-pills-settings div div img {
   width: 17%;
   border-radius: 50%;
   border: 3px #e6e7f3 solid;
 }
-section:nth-of-type(3) div div:nth-of-type #home div div div, section:nth-of-type(3) div div:nth-of-type #lunch div div div, section:nth-of-type(3) div div:nth-of-type #snacks div div div, section:nth-of-type(3) div div:nth-of-type #dinner div div div {
-  display: flex;
-  flex-direction: column;
-  width: 55%;
-  text-align: left;
-  border: 3px red solid;
-}
-section:nth-of-type(3) div div:nth-of-type #home div div div p, section:nth-of-type(3) div div:nth-of-type #lunch div div div p, section:nth-of-type(3) div div:nth-of-type #snacks div div div p, section:nth-of-type(3) div div:nth-of-type #dinner div div div p {
-  margin: 0;
-  font-weight: bold;
-  text-align: left;
-}
-section:nth-of-type(3) div div:nth-of-type #home div div div span, section:nth-of-type(3) div div:nth-of-type #lunch div div div span, section:nth-of-type(3) div div:nth-of-type #snacks div div div span, section:nth-of-type(3) div div:nth-of-type #dinner div div div span {
-  font-size: small;
-}
-section:nth-of-type(3) div div:nth-of-type #home div div p, section:nth-of-type(3) div div:nth-of-type #lunch div div p, section:nth-of-type(3) div div:nth-of-type #snacks div div p, section:nth-of-type(3) div div:nth-of-type #dinner div div p {
-  display: inline;
-  height: 23px;
-}
-
-#home div div, #lunch div div, #snacks div div, #dinner div div {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-#home div div img, #lunch div div img, #snacks div div img, #dinner div div img {
-  width: 17%;
-  border-radius: 50%;
-  border: 3px #e6e7f3 solid;
-}
-#home div div div, #lunch div div div, #snacks div div div, #dinner div div div {
+#v-pills-home div div div, #v-pills-profile div div div, #v-pills-messages div div div, #v-pills-settings div div div {
   display: flex;
   flex-direction: column;
   width: 55%;
   text-align: left;
 }
-#home div div div p, #lunch div div div p, #snacks div div div p, #dinner div div div p {
+#v-pills-home div div div p, #v-pills-profile div div div p, #v-pills-messages div div div p, #v-pills-settings div div div p {
   margin: 0;
   font-weight: bold;
   text-align: left;
 }
-#home div div div span, #lunch div div div span, #snacks div div div span, #dinner div div div span {
+#v-pills-home div div div span, #v-pills-profile div div div span, #v-pills-messages div div div span, #v-pills-settings div div div span {
   font-size: small;
 }
-#home div div p, #lunch div div p, #snacks div div p, #dinner div div p {
+#v-pills-home div div p, #v-pills-profile div div p, #v-pills-messages div div p, #v-pills-settings div div p {
   display: inline;
   height: 23px;
 }
