@@ -1,9 +1,15 @@
+// SECTION CAROUSEL
+    
 section:first-of-type
     position: relative
     div
         div
             div
                 div
+                    // display: flex
+                    // flex-direction: column
+                    // justify-content: center
+                    // align-items: center
                     div:first-of-type
                         font-family: 'Courgette', cursive
                         line-height: 1
@@ -49,6 +55,72 @@ section:first-of-type
         width: 100%
         height: 100%
         background-color:  rgba(52,58,64,0.8)
+@media ( min-width: 600px ) and ( max-width:800px )
+    section:first-of-type
+        div
+            div
+                div
+                    div
+                        div:first-of-type
+                            line-height: 1
+                            margin-bottom: 20px
+                            p:first-of-type
+                                font-size: 25px
+                                span
+                                    font-size: 50px
+                            p:nth-of-type(2)
+                                font-size: 25px
+                                span:first-of-type
+                                    font-size: 50px
+                                span:last-of-type
+                                    font-size: 40px
+                            p:last-of-type
+                                font-size: 25px
+                        div:last-of-type
+                            a:first-of-type
+                                button
+                                    font-size: smaller
+                                    padding: 5px 
+                            a:last-of-type
+                                button
+                                    font-size: smaller
+                                    padding: 5px
+
+@media ( min-width: 320px ) and ( max-width: 599px )
+    section:first-of-type
+        div
+            div
+                div
+                    div
+                        margin-bottom: 15px
+                        margin-top: 30px
+                        div:first-of-type
+                            line-height: 0.8
+                            margin-bottom: 5px
+                            margin-top: 70px
+                            p:first-of-type
+                                font-size:18px
+                                span
+                                    font-size: 27px
+                            p:nth-of-type(2)
+                                font-size: 18px
+                                span:first-of-type
+                                    font-size: 27px
+                                span:last-of-type
+                                    font-size: 27px
+                            p:last-of-type
+                                font-size: 18px
+                        div:last-of-type
+                            a:first-of-type
+                                button
+                                    font-size: 10px
+                                    padding: 5px 
+                            a:last-of-type
+                                button
+                                    font-size: 10px
+                                    padding: 5px
+
+// SECTION DECO 
 
 #test
     background-image: url("./public/images/bottom_decoration_img.png")
@@ -56,7 +128,7 @@ section:first-of-type
     background-size: contain
     background-color:  rgba(52,58,64,0.8)
 
-
+// SECTION MENU
 
 section:nth-of-type(3)
     padding-top: 40px
@@ -91,22 +163,22 @@ section:nth-of-type(3)
                 span
                     color: $danger
                     font-size: 50px
-        div:nth-of-type(2)
-            // display: flex
-            // flex-direction: column
-            // align-items: center 
-            // padding: 30px
-            border: 3px solid green
-            h2
-                font-size: 35px
-                font-family:  'Courgette', cursive
-                color: black
-                border: 3px solid red
-                span
-                    color: $danger
-                    font-size: 50px
-                    border: 3px solid yellow
-        div:nth-of-type
+        // div:nth-of-type(2)
+        //     // display: flex
+        //     // flex-direction: column
+        //     // align-items: center 
+        //     // padding: 30px
+        //     border: 3px solid green
+        //     h2
+        //         font-size: 35px
+        //         font-family:  'Courgette', cursive
+        //         color: black
+        //         border: 3px solid red
+        //         span
+        //             color: $danger
+        //             font-size: 50px
+        //             border: 3px solid yellow
+        // div:nth-of-type
             // #v-pills-home, #v-pills-profile, #v-pills-messages, #v-pills-settings
             //     border: yellow 6px solid
             //     div
@@ -136,10 +208,46 @@ section:nth-of-type(3)
             //                 display: inline
             //                 height: 23px
 
+@media (min-width: 320px) and ( max-width: 600px)
+    section:nth-of-type(3)
+        padding: 0
+        div
+            div
+                h2
+                    margin-top: 40px
+                    margin-bottom: 15px
+                    font-size: 20px
+                    span
+                        font-size: 35px
+                p
+                    margin-bottom: 50px
+                    font-size: smaller
+                    width: 80% !important
+
+// MENU
+
+#menu
+    div
+        div
+            a
+                font-family:  'Courgette', cursive
+                font-size: 30px
+                color: black
+                border-bottom: 0.7px solid #cbcbd1
+                border-radius: 0
+                &:focus 
+                    background-color: $light !important
+                    border-right: 4px solid $danger
+                    i
+                        color: $danger
+                i
+                    font-size: 35px
+                    color: #9c9ca5
+                    
 // LES PROB SONT LAAAAAAAAAAAAAAAAAAAAAAAAA
 
 #v-pills-home, #v-pills-profile, #v-pills-messages, #v-pills-settings
-    // display: flex
+    display: flex
     div
         div
             display: flex
@@ -163,10 +271,40 @@ section:nth-of-type(3)
             p
                 display: inline
                 height: 23px
+@media (min-width: 501) and ( max-width: 900px)
+    #menu
+        div:nth-of-type(2)
+            padding: 0
+            #v-pills-home, #v-pills-profile, #v-pills-messages, #v-pills-settings
+                display: flex !important
+                flex-direction: column !important
+                align-items: flex-end !important
+                div
+                    width: 80% !important
+                    margin: 0 !important
+                    div 
+                        margin: 0
+    
+@media ( max-width: 500px)
+    #menu
+        div:nth-of-type(2)
+            padding: 0
+            #v-pills-home, #v-pills-profile, #v-pills-messages, #v-pills-settings
+                display: flex !important
+                flex-direction: column !important
+                align-items: flex-end !important
+                div
+                    width: 80% !important
+                    margin: 0 !important
+                    div 
+                        margin: 0
+                        display: flex
+                        flex-direction: column
+                        font-size: smaller
+                        width: 70%
+    
 
-
-
-
+// SECTION CHEFS
 
 
 section:nth-of-type(4)
@@ -188,14 +326,56 @@ section:nth-of-type(4)
         display: flex
         align-items: center
         justify-content: space-around
+        flex-wrap: wrap
         div
             display: flex
             flex-direction: column
-            div
-                display: none
-                // &:hover
-                // display: contents
- 
+            position: relative
+            .hover
+                opacity: 0
+                position: absolute
+                bottom: 75px
+                width: 65%
+                padding: 10px
+                border-bottom: 1px $light solid
+                color: $light
+                transition-delay: 0.3s
+                transition: 1s
+                border-top-right-radius: 10px
+                border-top-left-radius: 10px
+                div
+                    padding: 0
+                    i
+                        padding-left: 5px
+                        padding-right: 5px
+                &:hover
+                    background-color: $danger
+                    opacity: 1
+            
+// @media ( min-width: 1008px )
+//     .photos
+//         display: flex
+//         align-items: center
+//         justify-content: space-around
+// @media ( max-width: 1007px )
+//     .photos
+//         display: flex
+//         flex-direction: column
+//         align-items: center
+@media (min-width: 320px) and ( max-width: 600px)
+    section:nth-of-type(4)
+        div
+            h2
+                font-size: 20px
+                span
+                    font-size: 35px
+
+    
+        
+
+                        
+
+// SECTION  RESA  
 
 section:nth-of-type(5)
     padding-top: 40px
@@ -262,28 +442,70 @@ section:nth-of-type(5)
                 border-radius: 35px
                 padding: 10px
                 &:hover
-                background-color: $danger
-                color: $light 
+                    background-color: $danger
+                    color: $light
 
-// #blog
-//     div
-//     div
-//         div
-//             display: flex
-//             flex-direction: column
-//             align-items: center
-//             justify-content: center
-//             div
-//                 img
-//                     border: #e6e7f3 4px solid
-//                     border-radius: 10px
-//                     width: 350px
-//                 p
-//                     background-color: $danger
-//                     border-radius: 10px
-//                     color: $light
+    
+@media ( min-width: 320px ) and ( max-width: 599px )
+    section:nth-of-type(5)
+        padding: 0
+        div:first-of-type 
+            h2
+                font-size: 20px
+                margin-top: 20px
+                span
+                    font-size: 35px
+        div:nth-of-type(2)
+            div
+                display: flex
+                flex-direction: column
+                padding: 0
+                width: 80%
+                div
+                    width: 100% !important
+                    padding: 0
+                    justify-content: space-around !important
+                    input
+        #blog
+            div
+                h2
+                    font-size: 20px
+                    span
+                            font-size: 35px
+            #flex
+                display: flex
+                flex-direction: column
+                align-items: center
+                width: 100%
+                padding: 0
+                div
+                    width: 100% !important
+                    height: 400px
+                    padding: 0
+                    margin-bottom: 35px
+        
+@media ( min-width: 600px ) and ( max-width: 1200px )
+    section:nth-of-type(5)
+        #blog
+            div
+                h2
+                    font-size: 20px
+                    span
+                            font-size: 35px
+            #flex
+                display: flex
+                flex-direction: column
+                align-items: center
+                width: 100%
+                padding: 0
+                div
+                    width: 75% !important
+                    height: 400px
+                    padding: 0
+                    margin-bottom: 35px
 
 
+// SECTION TESTIMO 
 
 section:nth-of-type(6)
     padding: 40px
@@ -303,28 +525,101 @@ section:nth-of-type(6)
                 font-size: 50px
     div:nth-of-type(2)
         justify-content: space-between
-        padding: 40px
-        img
-            border-radius: 50%
-            border: 4px $light solid
-            width: 170px
-        div
-            border: $light 1px solid
-            border-radius: 10px
-            width: 350px
-            // text-align: left
-            padding: 10px
-            h5
-                color: $light
-                text-align: left
-            p
-                color: $danger
-                text-align: left
-            span
-                color: $light 
-                text-align: left               
-        
+        padding-top: 40px
+        padding-bottom: 40px
+        div:first-of-type
+            display: flex
+            flex-direction: row
+            justify-content: space-around
+            img
+                border-radius: 50%
+                border: 4px $light solid
+                width: 170px
+                margin-right: 10px
+            div
+                border: $light 1px solid
+                border-radius: 10px
+                width: 350px
+                padding: 10px
+                display: flex
+                flex-direction: column
+                h5
+                    color: $light
+                    text-align: left
+                p
+                    color: $danger
+                    text-align: left
+                span
+                    color: $light 
+                    text-align: left         
+        div:last-of-type
+            display: flex
+            div
+                border: $light 1px solid
+                border-radius: 10px
+                width: 350px
+                padding: 10px
+                display: flex
+                flex-direction: column
+                h5
+                    color: $light
+                    text-align: left
+                p
+                    color: $danger
+                    text-align: left
+                span
+                    color: $light 
+                    text-align: left     
+            img
+                border-radius: 50%
+                border: 4px $light solid
+                width: 170px    
+                margin-left: 10px
 
+@media ( min-width: 500px ) and ( max-width: 1200px )
+    section:nth-of-type(6)
+        div:nth-of-type(2)
+            display: flex
+            flex-direction: column
+            div:first-of-type
+                display: flex
+                flex-direction: column
+                div
+                    margin-top: 10px
+            div:last-of-type
+                display: flex
+                flex-direction: column-reverse
+                align-items: center
+                div
+                    margin-top: 10px
+@media ( min-width: 320px ) and ( max-width: 499px )
+    section:nth-of-type(6)
+        div:first-of-type 
+            h2
+                font-size: 20px
+                span
+                    font-size: 35px
+        div:nth-of-type(2)
+            display: flex
+            flex-direction: column
+            div:first-of-type
+                display: flex
+                flex-direction: column
+                div
+                    margin-top: 10px
+                    font-size: x-small
+                    width: 100%
+            div:last-of-type
+                display: flex
+                flex-direction: column-reverse
+                align-items: center
+                div
+                    margin-top: 10px
+                    width: 100%
+                    font-size: x-small
+                     
+        
+// SECTION CONTACT
 
 section:nth-of-type(7)
     padding: 40px
@@ -348,7 +643,14 @@ section:nth-of-type(7)
         margin-top: 20px
         border-radius: 15px
         color: $light
-
+        width: 315px
+@media ( min-width: 320px ) and ( max-width: 499px )
+    section:nth-of-type(7)
+        div:first-of-type 
+            h2
+                font-size: 20px
+                span
+                    font-size: 35px
 
 section:nth-of-type(8)
     height: 20px
@@ -432,34 +734,3 @@ section:nth-of-type(8)
                 background-color: $light
                 color: black
                 
-
-
-
-// #home, #lunch, #snacks, #dinner
-//     border: yellow 6px solid
-//     div
-//         border: green 6px solid
-//         div
-//             display: flex
-//             justify-content: space-evenly
-//             align-items: center
-//             img
-//                 width: 17%
-//                 border-radius: 50%
-//                 border: 3px #e6e7f3 solid
-//             div
-//                 display: flex
-//                 flex-direction: column
-//                 width: 55%
-//                 text-align: left
-//                 border: 3px red solid
-//                 p
-//                     margin: 0
-//                     font-weight: bold
-//                     text-align: left
-//                 span
-//                     font-size: small
-                                
-//             p
-//                 display: inline
-//                 height: 23px
